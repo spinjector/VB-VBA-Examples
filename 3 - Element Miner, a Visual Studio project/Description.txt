@@ -1,0 +1,11 @@
+
+ElementMiner is the result of formal development of the ideas behind the previous two projects, 'XDS Graph' and 'Excel Data Store'. While at Erie Community College, I obtained an educational copy of Visual Studio 2012 and started devloping the project into a standalone application. The goal is to log data from equipment and store it in a robust database, in this case Microsoft SQL Server Express. The data should be made available in various formats for examination & analysis.
+
+Hightlights:
+- a web browser window to log in & pick an HTML element to monitor
+- a picker window to drill down into the details of the HTML
+- an MSSQL data source to store the data
+- a 'form launcher' development tool that uses VB reflection to list & launch all forms in the project
+- many ideas for further development
+
+I used this project as the basis of one of my classes in the spring 2016 semester. It's still under development. I hope to release it as a free utility on Download.com once it's complete.
