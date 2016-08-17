@@ -1,0 +1,26 @@
+
+The file 'XDS Graph.xls' is a project I started to help me diagnose an intermittent signal problem with the XDS satellite receiver we used to receive ESPN sports programming for rebroadcast in our market. I chose to develop the idea in Excel VBA because it was fast & easy, and I did not have access to Visual Studio.
+
+The XDS is a commercial radio satellite receiver designed on an embedded Linux platform. It has various servers, such as HTTP, FTP, and NTP, and built-in web-based configuration pages, much like a consumer-grade home router from Netgear or Linksys. It also has a primitive error logging system, but it's difficult to read and only stores basic parameters.
+
+We began having problems with intermittent satellite signals that were causing loss of audio on the air. I tried to make do troubleshooting with the built-in error log, but it just wasn't useful enough. So I got an idea. I went one better and made my own troubleshooting tool, and 'XDS Graph' is the result.
+
+XDS-Graph is an Excel VBA spreadsheet of medium complexity, and is esssentially a web data-mining tool that's coded for a spefific piece of hardware. The code can be found in 'Module 1' in the Visual Basic editor window of the workbook.
+
+It does the following:
+- system calls to Kernel32 for the Sleep function
+- uses the HTML DOM (document object model) of the Microsoft Internet Control (aka IE)
+- acesses the main configuration page of the receiver in a hidden browser window
+- enters login information
+- open a specific page/frame containing the data
+- uses the DOM to get the decimal values of the data
+- logs the data in the worksheet until the desired date & time
+- there is an additional subroutine that simply lists all HTML elements on the page
+
+The chart shown on the sheet was created manually to represent the collected data.
+
+And it worked! The downward spikes in the graph correspond to the times of the errors. In the end, the cause was determined to be a problem in the tuner section of the reciever, and the carrier sent us a replacement reciever.
+
+
+
+ 

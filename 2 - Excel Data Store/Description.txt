@@ -1,0 +1,34 @@
+
+DataStore is a project I started to help diagnose a problem with the HDXFM signal generator in the transmitter of WMHT-FM in Albany. It was suffering from chronic loss of audio that no one could explain, not even the manufacturer. As with many of my programming projects, it started with an idea.
+
+I chose to develop the idea in Excel VBA because it was fast & easy, and I did not have access to Visual Studio at that employer. The code can be found in the VB window of the workbook, under Modules, and "DataManagerTest".
+
+Just as with the XDS receiver in the previous example, the HDXFM is a system designed on an embedded Linux platform, with HTTP, FTP, and NTP. But it had a very primitive web-based configuration system that wasn't very useful. But what it did have was a Telnet-based ASCII system with lots of useful data, in fact, ten full pages of it, and it was updated once per second. But that ASCII data was buried in rows & columns with ANSI escape sequences, so all that had to be dug through. 
+
+What I cam up with has two chapters:
+
+1) Q: How do I get the data from the Telnet window of the HDXFM into Excel?
+   A: The Microsoft Winsock control.
+
+2) Q: Wow, the amount of data is ginormous, and will exceed the row limit of a sheet. Now what?
+   A: Find a new way to store it, but keep it IN the sheet.
+   Furthermore: Don't store the data in any separate files, and don't use hidden rows, columns, sheets, or objects.
+   Essentially: Create an internal database in the sheet where even the most determined user can't find it.
+
+I found existing source code online that used Winsock to create a Telnet-based chat window inside Excel. Using that I found the following:
+1) It could be extended to log the recived text.
+2) Both the Winsock and the HDXFM supported multiple simultaneous connections.
+Result: Ten simultaneous Telnet connections from Excel to the HDXFM, each to a different page of data, all of it logged into sheets in the Excel workbook. And it seemed to work, at least in testing.
+
+The Sidequest...
+
+When I realized that continuous logging of the data for many days would quickly exceed the row limit of a sheet, I devised a new way of storing the data. Back in the early days of the BASIC programming language, there were the DATA and READ commands, which were used to store hard-coded data right in the source code. So I wondered if that could be done in an Excel VBA module, and I discovered it could.
+
+Microsoft Office has a largely unknown project reference called "Microsoft Visual Basic for Applicaitons Extensibility", also referred to simply as "VBE". The VBE allows VBA code to create, modify, and delete other code modules. The most obvious use would be with a an Office VBA "extension" to write pre-formatted code modules. But...I had another idea: use it to store & read date.
+
+So that's what this DataStore XLS file does: it uses VBE to store large blocks of data in code modules, and it does so as VBA comment lines, since there is no modern equivalent to the DATA and READ commands. I devised various testing routines to find the limits of module sizes, since that information was not published anywhere by microsoft.
+
+For the versions of Excel and VBE that I was using, I found the following:
+A VBA code module has a line limit of 1022 characters. Presumably 1023 & 1024 are carriage return & line feed. The line limit is weird; there's a separate limit for actual code, and a much larger limit for comment text. At this time I cannot recall the code limit, but the comment limit is as large as 7MB, per module. At one time I had about a dozen test modules, and the workbook saved, opened, and operated correctly and with stability.
+
+And that's where the project stopped, because I left the company before finishing it. And without access to the HDXFM, there was no way I could. Or at least I couldn't finish the Telnet part. Perhaps I'll finish the data storage part..."someday".
