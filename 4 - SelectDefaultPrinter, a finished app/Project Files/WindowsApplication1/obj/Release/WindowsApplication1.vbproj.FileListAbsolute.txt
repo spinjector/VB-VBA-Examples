@@ -1,0 +1,19 @@
+C:\Users\Administrator\AppData\Local\Temporary Projects\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\AppData\Local\Temporary Projects\WindowsApplication1\obj\Release\WindowsApplication1.Form1.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\WindowsApplication1\obj\Release\WindowsApplication1.Resources.resources
+C:\Users\Administrator\AppData\Local\Temporary Projects\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\SelectDefaultPrinter.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\SelectDefaultPrinter.application
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\SelectDefaultPrinter.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\SelectDefaultPrinter.pdb
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\bin\Debug\SelectDefaultPrinter.xml
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.Form1.resources
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.Resources.resources
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\WindowsApplication1.vbproj.GenerateResource.Cache
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.TrustInfo.xml
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.exe.manifest
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.application
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.exe
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.xml
+C:\Users\Administrator\Documents\Visual Studio 2008\Projects\WindowsApplication1\WindowsApplication1\obj\Release\SelectDefaultPrinter.pdb

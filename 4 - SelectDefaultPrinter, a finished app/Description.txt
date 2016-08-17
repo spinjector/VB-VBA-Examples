@@ -1,0 +1,10 @@
+
+SelectDefaultPrinter is an app I wrote at Townsquare Media as part of a new pc rollout. I found when a user logged on to a computer they hadn't used before, they often didn't select their default printer, or didn't know what it was. In some cases they would print something that was privacy sensitive, and then had to run around to figure out which printer it went to. And many users were not computer literate enough to know how to select the default printer on their own.
+
+SelectDefaultPrinter does just that - it sets the default printer. It's a tiny "portable" app that presents the user with a list of printers, and they simply double click on it. I pinnned it to their start menus so they all knew where it was if they needed it. Also, I included it with "RunOnce" status in the Windows logon script, so the user would be forced to select their printer each time they logged on to a machine for the first time.
+
+Future upgrade plans:
+- command line arguments to set the printer
+- selectble filters
+- type-to-search for cases where there are many printers
+- make it a tray app
